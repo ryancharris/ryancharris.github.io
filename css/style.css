@@ -1,3 +1,16 @@
 body {
 
 }
+
+ul.social li {
+	display: inline;
+	margin: 0 20px 0 0;
+}
+
+ul.social li a {
+	color: #000;
+}
+
+ul.social li a:hover {
+	color: #7CCEFF;
+}
