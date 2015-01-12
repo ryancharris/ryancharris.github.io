@@ -1,0 +1,65 @@
+@media screen and (min-width: 480px) {
+
+/* --  PORTFOLIO PAGE  -- */
+
+#gallery li {
+	float: left;
+	width: 45%;
+	margin: 0 2.5% 30px;
+
+}
+
+/*#gallery li:nth-child(2n) {
+    clear: left;
+  }*/
+
+/* --  ABOUT PAGE  -- */
+
+.profile-photo {
+	float: left;
+	margin: 0 5% 30px 0;
+}
+
+/* --  CONTACT PAGE  -- */
+
+#primary {
+	float: left;
+	width: 50%;
+}
+
+#secondary {
+	float: right;
+	width: 40%;
+}
+
+
+
+}
+
+
+@media screen and (min-width: 660px) {
+
+/* --  NAVIGATION  -- */
+
+header {
+	border-bottom: 3px solid peru;
+}
+
+nav {
+	background: none;
+	border: none;
+	float: right;
+	margin: 10px 2.5% 0 0;
+}
+
+#logo {
+	float: left;
+	text-align: left;
+	margin-left: 5%;
+}
+
+
+
+
+
+}
