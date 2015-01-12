@@ -49,13 +49,16 @@ nav {
 	background: none;
 	border: none;
 	float: right;
-	margin: 10px 2.5% 0 0;
+	margin-right: 5%;
+	width: 45%;
+	text-align: right;
 }
 
 #logo {
 	float: left;
 	text-align: left;
 	margin-left: 5%;
+	width: 45%;
 }
 
 
