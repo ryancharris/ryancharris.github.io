@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+@media (min-width: 480px) {
 
 /* --  PORTFOLIO PAGE  -- */
 
@@ -7,6 +7,12 @@
 	width: 45%;
 	margin: 0 2.5% 30px;
 
+}
+
+/* --  FOOTER  -- */
+
+.footer {
+	margin-top: 40px;
 }
 
 /*#gallery li:nth-child(2n) {
@@ -18,6 +24,7 @@
 .profile-photo {
 	float: left;
 	margin: 0 5% 30px 0;
+	max-width: 200px;
 }
 
 /* --  CONTACT PAGE  -- */
@@ -37,7 +44,7 @@
 }
 
 
-@media screen and (min-width: 660px) {
+@media (min-width: 660px) {
 
 /* --  NAVIGATION  -- */
 
