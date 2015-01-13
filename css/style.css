@@ -4,9 +4,9 @@ GENERAL
 
 body {
 	background-color: beige;
-	font-family: 'Helvetica Neue', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-size: 1em;
-	color: gray;
+	color: dimgray;
 }
 
 h1 {
@@ -66,11 +66,12 @@ header {
 #title {
 	font-size: 2.75em;
 	font-weight: 700;
-	margin-bottom: 0.15em; /* 12px */
+	/*margin-bottom: 0.15em;  12px */
 }
 
 #sub-title {
 	font-size: 1.125em;
+	font-weight: 300;
 	margin-bottom: 1.25em; /* 20px */
 }
 
@@ -86,6 +87,7 @@ NAVIGATION
 ******************************/
 
 nav {
+	font-family: 'Source Sans Pro', sans-serif;
 	background-color: peru;
 	text-align: center;
 	padding: .65em 0;
@@ -109,7 +111,7 @@ nav a {
 
 nav a.selected, 
 nav a:hover {
-	color: black;
+	color: dimgray;
 }
 
 
@@ -165,11 +167,24 @@ ABOUT
 	border: 5px solid orange;
 }
 
+#about p {
+	line-height: 1.325em;
+}
+
 
 
 /******************************
 CONTACT
 ******************************/
+
+#primary,
+ #secondary {
+ 	margin-bottom: 20px;
+ }
+
+#primary p {
+	line-height: 1.325em;
+}
 
 .contact-info {
 	list-style: none;
@@ -194,10 +209,10 @@ FOOTER
 
 footer {
 	color: lightgrey;
-	background-color: orange;
+	/*background-color: orange;*/
 	font-size: 0.7em;
 	text-align: center;
-	border-top: 3px solid peru;
+	/*border-top: 3px solid peru;*/
 	margin-top: 50px;
 }
 
