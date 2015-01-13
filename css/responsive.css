@@ -1,11 +1,5 @@
 @media (min-width: 480px) {
 
-	/* --  FOOTER  -- */
-
-	.footer {
-		margin-top: 40px;
-	}
-
 	/*#gallery li:nth-child(2n) {
 	    clear: left;
 	  }*/
@@ -70,6 +64,12 @@
 		text-align: left;
 		margin-left: 5%;
 		width: 45%;
+	}
+
+	/* --  FOOTER  -- */
+
+	.footer {
+		margin-top: 40px;
 	}
 
 }
