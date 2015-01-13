@@ -59,10 +59,11 @@ HEADING
 header {
 	margin: 0 auto 2.25em; /* 36px */
 	padding-top: 16px;
-	background: linear-gradient(orange, transparent 90%),
+	background: linear-gradient(orange, transparent),
+				linear-gradient(to top, peru, transparent),
 				orange url('../img/header-bg.jpg') center no-repeat;
 	background-size: cover;
-	box-shadow: inset 0 0 50px 20px rgba(0, 0, 0, .2);
+	box-shadow: inset 0 0 40px 20px rgba(0, 0, 0, .15);
 	text-align: center;
 }
 
