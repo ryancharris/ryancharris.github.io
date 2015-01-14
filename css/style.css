@@ -1,6 +1,4 @@
-/******************************
-GENERAL
-******************************/
+/***** GENERAL *****/
 
 * {
 	box-sizing: border-box;
@@ -45,9 +43,9 @@ a:hover {
 	color: peru;
 }
 
-/*a:link, a:visited {
-	color: white;
-}*/
+i {
+	padding-right: 10px;
+}
 
 #wrapper {
 	margin: 0 auto;
@@ -56,9 +54,8 @@ a:hover {
 }
 
 
-/******************************
-HEADING
-******************************/
+
+/***** HEADING *****/
 
 header {
 	margin: 0 auto 2.25em; /* 36px */
@@ -90,10 +87,7 @@ header {
 
 
 
-
-/******************************
-NAVIGATION
-******************************/
+/***** NAVIGATION *****/
 
 nav {
 	font-family: 'Source Sans Pro', sans-serif;
@@ -126,10 +120,7 @@ nav a:hover {
 
 
 
-
-/******************************
-GALLERY
-******************************/
+/***** GALLERY *****/
 
 #gallery {
 	list-style: none;
@@ -149,11 +140,6 @@ GALLERY
 	text-align: right;
 }
 
-/*.gallery-video {
-	width: 100%;
-	height: 100%;
-}*/
-
 #gallery a:link, #gallery a:visited {
 	color: peru;
 }
@@ -164,9 +150,7 @@ GALLERY
 
 
 
-/******************************
-ABOUT
-******************************/
+/***** ABOUT *****/
 
 .profile-photo {
 	display: block;
@@ -182,9 +166,7 @@ ABOUT
 
 
 
-/******************************
-CONTACT
-******************************/
+/***** CONTACT *****/
 
 #primary,
  #secondary {
@@ -197,6 +179,7 @@ CONTACT
 
 .contact-info {
 	list-style: none;
+	font-size: .9em;
 }
 
 .contact-info a {
@@ -211,10 +194,7 @@ CONTACT
 
 
 
-
-/******************************
-FOOTER
-******************************/
+/***** FOOTER *****/
 
 footer {
 	color: lightgrey;
@@ -230,6 +210,8 @@ footer {
 	padding: 25px 0;
 }
 
+
+
 /* --- Float Clearfix --  */
 
 .group:after {
@@ -237,6 +219,8 @@ footer {
   display: table;
   clear: both;
 }
+
+
 
 /* --- Fluid Video Size --  */
 
@@ -254,21 +238,23 @@ footer {
 	height: 100%;
 }
 
+
+
+/***** MEDIA QUERIES *****/
+
 @media (min-width: 480px) {
 
-	/*#gallery li:nth-child(2n) {
-	    clear: left;
-	  }*/
-
-	/* --  ABOUT PAGE  -- */
+	/* --  About Page  -- */
 
 	.profile-photo {
 		float: left;
 		margin: 0 5% 30px 0;
-		max-width: 200px;
+		max-width: 175px;
 	}
 
-	/* --  CONTACT PAGE  -- */
+
+
+	/* --  Contact Page  -- */
 
 	#primary {
 		float: left;
@@ -285,7 +271,14 @@ footer {
 
 @media (min-width: 660px) {
 
-	/* --  PORTFOLIO PAGE  -- */
+	/* --  Navigation  -- */
+
+	header {
+		padding: 25px 0; 
+	}
+
+
+	/* --  Portfolio Page  -- */
 
 	#gallery li {
 		float: left;
@@ -299,7 +292,9 @@ footer {
 
 	}
 
-	/* --  NAVIGATION  -- */
+
+
+	/* --  Navigation  -- */
 
 	header {
 		border-bottom: 3px solid peru;
@@ -322,7 +317,17 @@ footer {
 		width: 45%;
 	}
 
-	/* --  FOOTER  -- */
+
+
+	/* --  About Page  -- */
+
+	.profile-photo {
+		max-width: 200px;
+	}
+
+
+
+	/* --  Footer  -- */
 
 	.footer {
 		margin-top: 40px;
