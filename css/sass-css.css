@@ -13,7 +13,6 @@ h1 {
   margin: 0; }
 
 h2, h3 {
-  font-family: "Source Sans Pro", sans-serif;
   margin: 0; }
 
 h3 {
@@ -51,7 +50,12 @@ iframe {
   font-weight: 700; }
 
 #sub-title {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  font-size: 1em;
+  -webkit-text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.2);
+  -mos-text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.2);
+  -ms-text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.2); }
 
 .group::after {
   clear: both;
@@ -197,21 +201,26 @@ footer {
 @media (min-width: 660px) {
   header {
     padding: 20px; }
-    header #logo {
-      float: left;
-      text-align: left;
-      padding-left: 10px; }
-    header #sub-title {
-      margin-bottom: 15px; }
-    header nav {
-      float: right;
-      border: none;
-      text-align: right;
-      padding-top: 15px; }
-      header nav a:link, header nav a:visited {
-        color: #bacfd8; }
-      header nav a:hover, header nav a.selected {
-        color: #fbfdfd; }
+    header #header-wrapper {
+      max-width: 960px;
+      margin: 0 auto; }
+      header #header-wrapper #logo {
+        float: left;
+        text-align: left;
+        padding-left: 10px; }
+      header #header-wrapper #sub-title {
+        margin-bottom: 15px;
+        text-align: right;
+        line-height: 0.4; }
+      header #header-wrapper nav {
+        float: right;
+        border: none;
+        text-align: right;
+        padding-top: 15px; }
+        header #header-wrapper nav a:link, header #header-wrapper nav a:visited {
+          color: #bacfd8; }
+        header #header-wrapper nav a:hover, header #header-wrapper nav a.selected {
+          color: #fbfdfd; }
 
   #gallery li {
     float: left;
