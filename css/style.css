@@ -47,6 +47,10 @@ i {
 	padding-right: 10px;
 }
 
+iframe {
+	border: none;
+}
+
 #wrapper {
 	margin: 0 auto;
 	padding: 0 5%;
@@ -148,6 +152,10 @@ nav a:hover {
 	color: white;
 }
 
+.gallery-video {
+	max-width: 100%;
+}
+
 
 
 /***** ABOUT *****/
@@ -210,6 +218,34 @@ footer {
 	padding: 25px 0;
 }
 
+/***** OVERLAY ******/
+
+#overlay {
+	background: rgba(0, 0, 0, 0.7);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	display: none;
+}
+
+#overlay p {
+	background: white;
+	width: 100%;
+	margin: -4px auto 0;
+	padding: 15px 10px;
+	position: relative;
+}
+
+
+.videoContainer {
+	margin: 10% auto;
+	max-width: 65%;
+	border: 5px solid white;
+	border-radius: 5px;
+}
 
 
 /* --- Float Clearfix --  */
@@ -226,8 +262,8 @@ footer {
 
 .videoWrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	/*padding-top: 25px;*/
+	padding-bottom: 56.25%;
+	padding-top: 25px;
 	height: 0;
 }
 .videoWrapper iframe {

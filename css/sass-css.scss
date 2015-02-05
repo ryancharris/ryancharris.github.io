@@ -1,0 +1,405 @@
+@import "bourbon/bourbon";
+
+//		COLOR VARIABLES	
+
+$primary-color: #3E606F;
+$light-primary: lighten($primary-color, 45%);
+
+$secondary-color: #91AA9D;
+$background-color: #FCFFF5;
+
+// 		FONT VARIABLES	
+
+$main-header: 'Raleway', sans-serif;
+$second-header: 'Source Sans Pro', sans-serif;
+
+//		IMAGE VARIABLE	
+
+$header-bg: "../img/header-bg.jpg";
+
+// 		MIXINS
+
+@mixin boxShadow($shadows...) {
+	-webkit-box-shadow: $shadows;
+	-mos-box-shadow: $shadows;
+	-ms-box-shadow: $shadows;
+	box-shadow: $shadows;
+
+}
+
+@mixin textShadow($shadow...) {
+	-webkit-text-shadow: $shadow;
+	-mos-text-shadow: $shadow;
+	-ms-text-shadow: $shadow;
+	text-shadow: $shadow;
+
+}
+
+@mixin roundPhoto($radius, $borderThick) {
+	-webkit-border-radius: $radius;
+	-mos-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+
+	border: $borderThick solid $primary-color;
+}
+
+//		DEFAULTS
+
+* {
+	@include box-sizing(border-box);
+}
+
+body {
+	background: $background-color;
+	font-family: $helvetica;
+	font-size: 1em;
+}
+
+h1 {
+	font-family: $main-header;
+	margin: 0;
+}
+
+h2 {
+	font-family: $second-header;
+	margin: 0;
+}
+
+h3 {
+	@extend h2;
+	margin-bottom: 1em;
+	color: darken($secondary-color, 25%);
+}
+
+a {
+	text-decoration: none;
+
+	&:link, &:visited {
+		color: $primary-color;
+	}
+
+	&:hover, &.selected { 
+		color: $light-primary;
+	}
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+i {
+	padding-right: 10px;
+}
+
+iframe {
+	border: none;
+}
+
+//		CLASSES AND IDS
+
+#logo {
+
+	color: $light-primary;
+
+	&:hover {
+		color: $light-primary;
+	}
+}
+
+#title {
+	@include textShadow(3px 3px 2.5px rgba(0, 0, 0, .1));
+	font-size: 2.75em;
+	font-weight: 700;
+}
+
+#sub-title {
+	margin-bottom: 25px;
+}
+
+.group {
+	@include clearfix;
+}
+
+//		HEADING
+
+header {
+	@include boxShadow(0px 3px 3px -2px rgba(0, 0, 0, 0.25));
+	@include background-image(linear-gradient($primary-color, transparent), linear-gradient(to top, $secondary-color, transparent), url($header-bg));
+	background-size: cover;
+	margin: 0 auto 30px;
+	padding: 20px 0;
+	text-align: center;
+}
+
+nav {
+	padding: 15px 0 0 0;
+	font-weight: bold;
+	border-top: 2px solid $background-color;
+
+	ul {
+
+		list-style: none;
+
+		li {
+			display: inline-block;
+		}
+
+	}
+
+	a {
+		@include textShadow(1.5px 1.5px 3px rgba(0, 0, 0, .2));
+		padding: 10px 20px;
+	}
+}
+
+
+//		GALLERY
+
+#wrapper {
+	margin: 0 auto;
+	max-width: 960px;
+	min-height: 500px;
+	padding: 0 5%;
+}
+
+#gallery {
+	list-style: none;
+
+	li {
+		margin-bottom: 5%;
+
+		img {
+		max-width: 100%;
+		}
+
+		p {
+			@include boxShadow(0px 5px 5px -4px rgba(0, 0, 0, 0.25));
+			background: $secondary-color;
+			text-align: right;
+			padding: 15px;
+			margin: -4px 0;
+			font-size: 0.8em;
+		}
+
+		a {
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+//		FOOTER
+
+footer {
+	margin: 30px 0;
+	color: lighten($secondary-color, 20%);
+	text-align: center;
+	font-size: 0.7em;
+}
+
+//		OVERLAY
+
+#overlay {
+	display: none;
+	background: rgba(0, 0, 0, 0.7);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: center;
+
+	.videoContainer {
+		margin: 10% auto;
+		max-width: 65%;
+		border: 5px solid #fff;
+		@include border-top-radius(5px);
+		@include border-bottom-radius(5px);
+
+		.videoWrapper {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 25px;
+			height: 0;
+
+			iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+	}
+}
+
+//		CONTACT
+
+#primary {
+	margin-bottom: 20px;
+	line-height: 1.325em;
+
+	p {
+		color: $primary-color;
+	}
+}
+
+#secondary {
+
+	h3 {
+		margin-bottom: 16px;
+	}
+
+	.contact-info {
+		list-style: none;
+		font-size: 0.9em;
+
+		a {
+			display: block;
+			margin-bottom: 10px;
+
+			&:hover {
+				color: $secondary-color;
+			}
+		}
+	}
+
+}
+
+//		ABOUT
+
+.profile-photo {
+	@include roundPhoto(100%, 5px);
+	display: block;
+	width: 150px;
+	margin: 0 auto 30px;
+}
+
+#about {
+
+	line-height: 1.325em;
+
+	h3 {
+		text-align: center;
+	}
+
+	p {
+		color: $primary-color;
+	}
+
+}
+
+//		MEDIA QUERIES
+
+@media (min-width: 480px) {
+
+	// About page
+
+	#about {
+
+		h3 {
+			text-align: left;
+		}
+
+		.profile-photo {
+			float: left;
+			width: 175px;
+			margin: 0 30px 30px 0;
+		}
+	}
+
+	// Contact page
+
+	#primary {
+		float: left;
+		width: 50%;
+	}
+
+	#secondary {
+		float: right;
+		width: 40%;
+	}
+
+}
+
+@media (min-width: 660px) {
+
+	// Header
+
+	header {
+
+		padding: 20px;
+
+
+		#logo {
+			float: left;
+			text-align: left;
+			padding-left: 10px;
+		}
+
+		#sub-title {
+			margin-bottom: 15px;
+		}
+
+		nav {
+			float: right;
+			border: none;
+			text-align: right;
+			padding-top: 15px;
+
+			a {
+				&:link, &:visited {
+					color: $light-primary;
+				}
+
+				&:hover, &.selected {
+					color: lighten($light-primary, 20%);
+				}
+
+			}
+		}
+
+	}
+
+
+	// Gallery
+
+	#gallery {
+
+		li {
+			float: left;
+			width: 45%;
+			margin: 0 2.5% 30px;
+		}
+
+	}
+
+	// About
+
+	#about-primary {
+		float: left;
+		width: 20%;
+
+		.profile-photo {
+			width: 200px;
+		}
+	}
+
+	#about-secondary {
+		float: right;
+		width: 65%;
+		padding: 15px;
+	}
+
+
+}
+
+
+
+
+
+
