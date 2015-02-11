@@ -1,5 +1,5 @@
 @import url("normalize.css");
-@import "bourbon/bourbon";
+@import "../css/bourbon/bourbon";
 
 //		COLOR VARIABLES	
 
@@ -321,6 +321,20 @@ footer {
 }
 
 //		MEDIA QUERIES
+
+@media (max-width: 479px) {
+
+	// Gallery
+
+	#gallery {
+		li {
+			h3 {
+				height: 35%;
+				padding: 20px 15px;
+			}
+		}
+	}
+}
 
 @media (min-width: 480px) {
 
