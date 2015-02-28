@@ -21,7 +21,7 @@ $header-bg: "../img/header-bg.jpg";
 // 		MIXINS
 
 @mixin boxShadow($shadows...) {
-	-webkit-box-shadow: $shadows;
+	// -webkit-box-shadow: $shadows;
 	-mos-box-shadow: $shadows;
 	-ms-box-shadow: $shadows;
 	box-shadow: $shadows;
@@ -29,7 +29,7 @@ $header-bg: "../img/header-bg.jpg";
 }
 
 @mixin textShadow($shadow...) {
-	-webkit-text-shadow: $shadow;
+	// -webkit-text-shadow: $shadow;
 	-mos-text-shadow: $shadow;
 	-ms-text-shadow: $shadow;
 	text-shadow: $shadow;
@@ -37,7 +37,7 @@ $header-bg: "../img/header-bg.jpg";
 }
 
 @mixin roundPhoto($radius, $borderThick) {
-	-webkit-border-radius: $radius;
+	// -webkit-border-radius: $radius;
 	-mos-border-radius: $radius;
 	-ms-border-radius: $radius;
 	border-radius: $radius;
