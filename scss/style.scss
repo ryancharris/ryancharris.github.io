@@ -134,7 +134,7 @@ footer {
 				@include transition(color 0.65s ease 50ms);
 
 				&:hover {
-					color: $accent-color;
+					color: $jumbotron-text-color;
 					@include transition(color 0.65s ease 50ms);
 				}
 
