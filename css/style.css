@@ -84,7 +84,7 @@ footer {
     -webkit-transition: color 0.65s ease 50ms;
     -moz-transition: color 0.65s ease 50ms;
     transition: color 0.65s ease 50ms; }
-  .navbar-default .navbar-nav li a:visited {
+  .navbar-default .navbar-nav li a:visited, .navbar-default .navbar-nav li a:hover {
     color: #fff; }
 
 /* --- HEADER --- */
