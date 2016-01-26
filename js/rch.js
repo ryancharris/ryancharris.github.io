@@ -38,7 +38,7 @@ $('.video-link').click(function(){
 	$('.modal-footer').replaceWith("<div class='modal-footer'>" + videoCaption + "</div>");
 });
 
-// Clear video when modal window closes
+// Clear video source when modal window closes
 $('#videoModal').on('hidden.bs.modal', function () {
-   $('#videoModal .modal-body').empty();
+   $('#video-frame').attr("src", "");
 });
