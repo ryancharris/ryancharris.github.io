@@ -48,14 +48,6 @@ footer {
   max-width: 960px; }
 
 /* --- NAVBAR --- */
-.navbar-default .navbar-toggle {
-  background-color: transparent; }
-.navbar-default .navbar-brand {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  color: #fff; }
-  .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:visited, .navbar-default .navbar-brand:active {
-    color: #fff; }
-
 .navbar {
   padding: 5px 0;
   border-bottom: 0;
@@ -63,6 +55,13 @@ footer {
   -mos-box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.25);
   -ms-box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.25); }
+  .navbar .navbar-toggle {
+    background-color: transparent; }
+  .navbar .navbar-header .navbar-brand {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    color: #fff; }
+    .navbar .navbar-header .navbar-brand:hover, .navbar .navbar-header .navbar-brand:visited, .navbar .navbar-header .navbar-brand:active {
+      color: #fff; }
 
 .navbar-toggle {
   border: none; }
