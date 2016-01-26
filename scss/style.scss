@@ -107,10 +107,6 @@ footer {
 	border: none;
 }
 
-.navbar-collapse {
-	border: 0;
-}
-
 .navbar-default {
 
 	.navbar-toggle {
@@ -125,27 +121,19 @@ footer {
 
 	}
 
-	.navbar-nav {
+	.navbar-collapse {
+		border: 0;
 
-		li {
+		.navbar-nav {
 
-			a {
-				color: $jumbotron-text-color;
-				@include transition(color 0.65s ease 50ms);
-
-				&:hover {
-					color: $accent-color;
-					@include transition(color 0.65s ease 50ms);
-				}
-
-				&:visited {
+			li {
+				a, a:hover, a:visited {
 					color: $jumbotron-text-color;
 				}
 			}
-
-
 		}
 	}
+
 }
 
 /* --- HEADER --- */
