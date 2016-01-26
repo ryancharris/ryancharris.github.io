@@ -25,6 +25,7 @@ $('.video-link').click(function(){
 	// Get title from <img> alt
 	var videoTitle = $(this).children('img').attr('alt');
 
+	// Get caption from <p>
 	var videoCaption = $(this).parent().next().html();
 
 	// Insert video src into <iframe>
