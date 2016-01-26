@@ -88,7 +88,7 @@ footer {
 		font-family: $jumbotron-font;
 		color: #fff;
 
-		&:hover, &:visited {
+		&:hover, &:visited, &:active {
 			color: #fff;
 		}
 	}
@@ -134,11 +134,11 @@ footer {
 				@include transition(color 0.65s ease 50ms);
 
 				&:hover {
-					color: $jumbotron-text-color;
+					color: $accent-color;
 					@include transition(color 0.65s ease 50ms);
 				}
 
-				&:visited, &:hover {
+				&:visited {
 					color: $jumbotron-text-color;
 				}
 			}
