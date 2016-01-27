@@ -407,6 +407,10 @@ footer {
 
 .awards-group {
 	margin-bottom: 35px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 }
 
 .awards-header-row {
