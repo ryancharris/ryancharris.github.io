@@ -218,6 +218,9 @@ footer {
 #video-frame {
   margin: 0 auto; }
 
+.modal-dialog {
+  max-width: 90%; }
+
 .modal-header {
   padding: 10px 15px; }
 
