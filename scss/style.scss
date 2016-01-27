@@ -341,11 +341,6 @@ footer {
 	margin: 0 auto;
 }
 
-.modal-dialog {
-	max-width: 90%;
-}
-
-
 .modal-header {
 	padding: 10px 15px;
 }
@@ -373,6 +368,7 @@ footer {
 
 .resume-row {
 	height: 90px;
+	margin-bottom: 15px;
 }
 
 .job-date {
@@ -410,11 +406,15 @@ footer {
 }
 
 .awards-group {
-	margin-bottom: 30px;
+	margin-bottom: 35px;
 }
 
-.awards-details {
-	margin-bottom: 5px;
+.awards-header-row {
+	margin-bottom: 10px;
+}
+
+.awards-details-row {
+	padding-bottom: 10px;
 }
 
 .award-film {
@@ -424,7 +424,7 @@ footer {
 
 .award-job {
 	font-weight: 100;
-	margin-top: 0;
+	margin: 0;
 	padding-top: 5px;
 	text-align: right;
 }
@@ -478,6 +478,11 @@ footer {
 		h3 {
 			font-size: 1.2em;
 		}
+	}
+
+	.resume-row {
+		margin-bottom: 10px;
+		height: 70px;
 	}
 
 	.job-date {
