@@ -369,6 +369,10 @@ footer {
 .resume-row {
 	height: 90px;
 	margin-bottom: 15px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 }
 
 .job-date {
