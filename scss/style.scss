@@ -25,7 +25,7 @@ $body-font: 'Roboto', Helvetica, Arial, sans-serif;
 
 body {
 	padding-top: 50px;
-	background-color: #fff;
+	background-color: $alt-background-color;
 	color: $body-text-color;
 	font-family: $body-font;
 }
@@ -36,6 +36,7 @@ a, a:hover {
 
 section {
 	padding: 40px 0 30px 0;
+
 }
 
 footer {
@@ -75,6 +76,18 @@ footer {
 .container {
 	max-width: 960px;
 }
+
+
+#summary, #resume, #awards {
+	background-color: $alt-background-color;
+}
+
+#projects, #skills, #about {
+	background-color: $light-primary-color;
+}
+
+
+
 
 /* --- NAVBAR --- */
 
@@ -193,7 +206,6 @@ footer {
 
 #summary {
 	padding-top: 50px;
-	background-color: $alt-background-color;
 }
 
 /*.summary-row {
@@ -224,7 +236,7 @@ footer {
 /* --- PROJECTS --- */
 
 #projects {
-	background-color: $light-primary-color;
+	
 }
 
 #gallery-buttons {
@@ -349,11 +361,9 @@ footer {
 	padding: 10px 15px;
 }
 
-/* --- RESUME --- */
+/* --- RESUME  --- */
 
 #resume {
-	background-color: $alt-background-color;
-
 	h3, h4 {
 		font-weight: 300;
 	}
@@ -376,7 +386,7 @@ footer {
 /* --- SKILLS --- */
 
 #skills {
-	background-color: $light-primary-color;
+
 }
 
 .skill-item {
@@ -389,10 +399,47 @@ footer {
 	background-color: $accent-color;
 }
 
+/* --- AWARDS  --- */
+
+#awards {
+	h3, h4 {
+		font-weight: 300;
+	}
+}
+
+.awards-group {
+	margin-bottom: 30px;
+}
+
+.awards-details {
+	margin-bottom: 5px;
+}
+
+.award-film {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.award-job {
+	font-weight: 100;
+	margin-top: 0;
+	padding-top: 5px;
+	text-align: right;
+}
+ .award-festival {
+	text-align: right;
+	margin-bottom: 0;
+}
+
+.award-title {
+	margin-bottom: 0;
+
+}
+
 /* --- ABOUT --- */
 
 #about {
-	background-color: $alt-background-color;
+	
 }
 
 .profile-photo {
@@ -404,12 +451,6 @@ footer {
   width: 150px;
   margin: 0 auto;
 }
-
-/* --- MISC --- */
-
-
-
-
 
 /* --- MEDIA QUERIES --- */
 
