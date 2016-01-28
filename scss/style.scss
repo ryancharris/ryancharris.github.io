@@ -455,6 +455,13 @@ footer {
 /* --- ABOUT --- */
 
 #about {
+
+	p {
+		a, a:hover, a:visited {
+			color: $accent-color;
+			text-decoration: none;
+		}
+	}
 	
 }
 

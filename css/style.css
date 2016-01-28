@@ -296,6 +296,10 @@ footer {
   margin-bottom: 0; }
 
 /* --- ABOUT --- */
+#about p a, #about p a:hover, #about p a:visited {
+  color: #7C4DFF;
+  text-decoration: none; }
+
 .profile-photo {
   -mos-border-radius: 100%;
   -ms-border-radius: 100%;
