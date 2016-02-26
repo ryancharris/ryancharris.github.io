@@ -376,20 +376,27 @@ footer {
 	}
 }
 
+
 .job-date {
 	margin-top: 0;
+	padding-right: 15px;
 	padding-top: 5px;
 	text-align: right;
 }
 
+
+
 .job-title {
 	margin-top: 0;
 	margin-bottom: 5px;
+	padding-left: 15px;
 }
 
 .job-desc {
 	margin-top: 0;
+	padding-left: 15px;
 }
+
 
 /* --- SKILLS --- */
 
@@ -403,8 +410,11 @@ footer {
 	text-align: right;
 }
 
-.progress-bar-info {
-	background-color: $accent-color;
+.progress {
+
+	.progress-bar-info {
+		background-color: $accent-color;
+	}
 }
 
 /* --- AWARDS  --- */
@@ -434,21 +444,25 @@ footer {
 .award-film {
 	margin-top: 0;
 	margin-bottom: 0;
+	padding-left: 15px;
 }
 
 .award-job {
 	font-weight: 100;
 	margin: 0;
 	padding-top: 5px;
+	padding-right: 15px;
 	text-align: right;
 }
  .award-festival {
 	text-align: right;
 	margin-bottom: 0;
+	padding-right: 15px;
 }
 
 .award-title {
 	margin-bottom: 0;
+	padding-left: 15px;
 
 }
 
@@ -534,6 +548,20 @@ footer {
 
 	#summary {
 		padding: 30px 0;
+	}
+
+	.about-blurb {
+		p {
+			padding: 0 15px;
+		}
+	}
+
+	.skill-item {
+		padding-left: 15px;
+	}
+
+	.progress {
+		margin-right: 15px;
 	}
 
 }

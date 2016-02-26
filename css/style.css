@@ -244,15 +244,18 @@ footer {
 
 .job-date {
   margin-top: 0;
+  padding-right: 15px;
   padding-top: 5px;
   text-align: right; }
 
 .job-title {
   margin-top: 0;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  padding-left: 15px; }
 
 .job-desc {
-  margin-top: 0; }
+  margin-top: 0;
+  padding-left: 15px; }
 
 /* --- SKILLS --- */
 .skill-item {
@@ -260,7 +263,7 @@ footer {
   font-weight: 300;
   text-align: right; }
 
-.progress-bar-info {
+.progress .progress-bar-info {
   background-color: #7C4DFF; }
 
 /* --- AWARDS  --- */
@@ -280,20 +283,24 @@ footer {
 
 .award-film {
   margin-top: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-left: 15px; }
 
 .award-job {
   font-weight: 100;
   margin: 0;
   padding-top: 5px;
+  padding-right: 15px;
   text-align: right; }
 
 .award-festival {
   text-align: right;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-right: 15px; }
 
 .award-title {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-left: 15px; }
 
 /* --- ABOUT --- */
 #about p a, #about p a:hover, #about p a:visited {
@@ -347,7 +354,16 @@ footer {
     font-size: 0.8em; }
 
   #summary {
-    padding: 30px 0; } }
+    padding: 30px 0; }
+
+  .about-blurb p {
+    padding: 0 15px; }
+
+  .skill-item {
+    padding-left: 15px; }
+
+  .progress {
+    margin-right: 15px; } }
 /* Tablets */
 @media (min-width: 768px) {
   /*footer {
