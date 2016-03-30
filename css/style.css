@@ -121,6 +121,16 @@ footer {
     font-weight: 200;
     font-size: 1.5em; }
 
+.tooltip-inner {
+  background-color: #7C4DFF; }
+
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-bottom-color: #7C4DFF;
+  border-width: 0 5px 5px; }
+
 /* --- SUMMARY --- */
 #summary {
   padding-top: 50px; }
