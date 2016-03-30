@@ -42,3 +42,8 @@ $('.video-link').click(function(){
 $('#videoModal').on('hidden.bs.modal', function () {
    $('#video-frame').attr("src", "");
 });
+
+// Activate Bootstrap tooltips
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
